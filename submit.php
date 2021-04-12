@@ -146,7 +146,7 @@ Welcome to Beginning PHP 8</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="general/welcome.html">
-Not Welcome to Beginning PHP 8</a></li>
+User's Guide Manual</a></li>
 </ul>          
         
       </div>
@@ -182,34 +182,47 @@ Not Welcome to Beginning PHP 8</a></li>
           <div role="main" class="document">
             
   <div class="section" id="codeigniter-user-guide">
-<h1>PHP 8 User Guide<a class="headerlink" href="#codeigniter-user-guide" title="Permalink to this headline">¶</a></h1>
-<ul class="simple">
-<li><a class="reference internal" href="license.html"><span class="doc">License Agreement</span></a></li>
-<li><a class="reference internal" href="changelog.html"><span class="doc">Change Log</span></a></li>
-</ul>
+<h1>Form Submit Guide by GET in PHP 8<a class="headerlink" href="#codeigniter-user-guide" title="Permalink to this headline">¶</a></h1>
+<h2></h2>
+<form action= "submit.php" method="get">
+Name: <input type="text" name="name" >
+<br />
+<hr>
+<input type="submit" >
+</form>
+<br />
+<hr>
+<?php
+$name = $_GET["name"];
+echo "Submitted text by GET: <h2>$name</h2>";
+?>
 <div class="contents local topic" id="contents">
-<ul class="simple">
-<li><a class="reference internal" href="#welcome" id="id1">Welcome</a></li>
-</ul>
+<h1>Form Submit Guide by POST in PHP 8<a class="headerlink" href="#codeigniter-user-guide" title="Permalink to this headline">¶</a></h1>
+<h2></h2>
+<form action= "submit.php" method="POST">
+Name: <input type="text" name="postName" >
+<br />
+<hr>
+<input type="submit" >
+</form>
+<br />
+
+<?php
+$postName = $_POST["postName"];
+echo "Submitted text by POST: <h2>$postName</h2>";
+?>
 </div>
+<br />
+<hr>
 <div class="section" id="welcome">
-<h2><a class="toc-backref" href="#id1">Welcome</a><a class="headerlink" href="#welcome" title="Permalink to this headline">¶</a></h2>
+
 <div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="general/welcome.html">
-Welcome to PHP 8</a></li>
-</ul>
+
 </div>
 </div>
 
 <div class="section" id="helper-reference">
-<h2><a class="toc-backref" href="#id10">Helper Reference</a><a class="headerlink" href="#helper-reference" title="Permalink to this headline">¶</a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="helpers/index.html">Helpers</a><ul>
-</ul>
-</li>
-</ul>
+
 </div>
 <div class="toctree-wrapper compound">
 </div>
