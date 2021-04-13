@@ -124,7 +124,7 @@ Helpers</a><ul>
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-nav-search">
         
-          <a href="#" class="fa fa-home">Beginning PHP 8 </a>
+          <a href="index.php" class="fa fa-home">Beginning PHP 8 </a>
         
         
 <div role="search">
@@ -146,7 +146,7 @@ Welcome to Beginning PHP 8</a></li>
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="general/welcome.html">
-Not Welcome to Beginning PHP 8</a></li>
+User's Guide Manual</a></li>
 </ul>          
         
       </div>
@@ -182,45 +182,43 @@ Not Welcome to Beginning PHP 8</a></li>
           <div role="main" class="document">
             
   <div class="section" id="codeigniter-user-guide">
-<h1>PHP 8 User Guide<a class="headerlink" href="#codeigniter-user-guide" title="Permalink to this headline">¶</a></h1>
-<ul class="simple">
-<li><a class="reference internal" href="submit.php"><span class="doc">
-GET and POST</span></a></li>
-<li><a class="reference internal" href="arrays.php"><span class="doc">
-All about Single Dimensional arrays</span></a></li>
-<li><a class="reference internal" href="associative_arrays.php"><span class="doc">
-All about Associative arrays</span></a></li>
+<h1>How we can use Arrays in PHP - Best Practices<a class="headerlink" href="#codeigniter-user-guide" title="Permalink to this headline">¶</a></h1>
+<code class="align-center">
 
-<li><a class="reference internal" href="using_arrays.php"><span class="doc">
-How we will use array in PHP</span></a></li>
+</code>
+<br /><hr>
+<form action="using_arrays.php" method="POST" >
+PHP : <input type="checkbox" name="ProgrammingBooks[]" value="PHP">
+<br><br>
+DART : <input type="checkbox" name="ProgrammingBooks[]" value="DART">
+<br><br>
+FLUTTER : <input type="checkbox" name="ProgrammingBooks[]" value="FLUTTER">
+<br><br>
+<input type="submit">
+</form>
+<br><hr>
+<?php
+
+$books = $_POST["ProgrammingBooks"];
+echo "The first book you've selected : " . $books[0];
+
+?>
 
 
 
 
-</ul>
-<div class="contents local topic" id="contents">
-<ul class="simple">
-<li><a class="reference internal" href="#welcome" id="id1">Welcome</a></li>
-</ul>
+
 </div>
+
 <div class="section" id="welcome">
-<h2><a class="toc-backref" href="#id1">Welcome</a><a class="headerlink" href="#welcome" title="Permalink to this headline">¶</a></h2>
+
 <div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="general/welcome.html">
-Welcome to PHP 8</a></li>
-</ul>
+
 </div>
 </div>
 
 <div class="section" id="helper-reference">
-<h2><a class="toc-backref" href="#id10">Helper Reference</a><a class="headerlink" href="#helper-reference" title="Permalink to this headline">¶</a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="helpers/index.html">Helpers</a><ul>
-</ul>
-</li>
-</ul>
+
 </div>
 <div class="toctree-wrapper compound">
 </div>

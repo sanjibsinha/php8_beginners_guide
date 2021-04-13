@@ -124,7 +124,7 @@ Helpers</a><ul>
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-nav-search">
         
-          <a href="#" class="fa fa-home">Beginning PHP 8 </a>
+      <a href="index.php" class="fa fa-home">Beginning PHP 8 </a>
         
         
 <div role="search">
@@ -214,7 +214,7 @@ echo "Submitted text by POST: <h2>$postName</h2>";
 </div>
 <br />
 <hr>
-<div class="section" id="welcome">
+<div class="section" id="welcome">c
 
 <div class="toctree-wrapper compound">
 
