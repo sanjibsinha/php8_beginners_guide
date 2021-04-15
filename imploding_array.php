@@ -234,6 +234,51 @@ foreach ($person as $key => $value) {
     }
 }
 
+function addManyNumbers(...$nums){
+  $sum = 0;
+  foreach ($nums as $value) {
+    $sum += $value;
+  }
+  
+  return $sum;
+}
+echo "Now you can add as many numbers as you want: " 
+. addManyNumbers(5, 8, 7, 23);
+echo "<br>";
+
+function addAnyNumbers(...$nums){
+  $sum = 0;
+  echo "Adding: <br>";
+  foreach ($nums as $value) {
+    echo $value . "<br>";
+    $sum += $value;
+  }
+  echo "The sum is: $sum<br>";
+}
+addAnyNumbers(5, 8, 7, 20);
+
+function addNumbers(...$nums) {
+  return array_reduce($nums, fn($carry, $n) => $carry + $n);
+}
+echo "Adding numbers: " . addNumbers(1, 2, 3, 33);
+echo "<br>";
+
+function carryToAddItems($carry, $item){
+
+  $carry += $item;
+  return $carry;
+
+}
+
+$addingNumbers = [1, 2, 3];
+
+$sum = array_reduce($addingNumbers, 'carryToAddItems');
+echo "Adding numbers: " . $sum;
+
+
+
+
+
 ?>
 
 
